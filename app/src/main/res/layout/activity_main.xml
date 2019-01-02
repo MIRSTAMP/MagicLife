@@ -5,6 +5,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.wtlk.ml.magiclife.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@drawable/line"
+            android:id="@+id/ll_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <!-- 界面一 -->
+
+            <ImageView
+                android:id="@+id/iv_icon1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@mipmap/fr_word" />
+
+            <!-- 界面二 -->
+
+            <ImageView
+                android:id="@+id/iv_icon2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@mipmap/fr_weather" />
+
+            <!-- 界面三 -->
+
+            <ImageView
+                android:id="@+id/iv_icon3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@mipmap/fr_calendar" />
+
+            <ImageView
+                android:id="@+id/iv_icon4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@mipmap/fr_life" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_menu" >
+        </FrameLayout>
+
+    </RelativeLayout>
+
 
 
 
